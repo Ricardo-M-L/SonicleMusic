@@ -1,0 +1,171 @@
+@import url('./bg-image.less');
+@import url('./navbar.less');
+@import url('./layout.less');
+@import url('./font.less');
+@import url('./constant.less');
+@import url('./u_cover.less');
+@import url('./u_icn.less');
+@import url('./s.less');
+@import url('./btn.less');
+@import url('./icn.less');
+@import url('./f.less');
+@import url('./u.less');
+@import url('./table.less');
+@import url('./m.less');
+
+html,
+body {
+  word-wrap: break-word;
+  word-break: break-word;
+  min-height: @min-height;
+}
+
+body {
+  min-width: @base-width;
+  font-size: 12px;
+  color: @base-color;
+  background-color: @bg;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-size: 100%;
+  }
+
+  h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold
+  }
+
+  a {
+    color: @base-color;
+    text-decoration: none;
+  }
+
+  li,
+  ol,
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  input {
+    outline: none;
+  }
+
+  em,
+  i {
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  dl,
+  dd {
+    padding: 0;
+    margin: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+}
+
+.w {
+  width: @base-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*
+    用于清除浮动
+*/
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// hover下划线
+.hover:hover {
+  text-decoration: underline !important;
+}
+
+.input-err-b {
+  border-color: #F08B8B !important;
+}
+
+.input-err-c {
+  color: #c20c0c !important;
+}
+
+.u-err {
+  height: auto;
+  line-height: 18px;
+  margin-top: 5px;
+  color: #e33232;
+}
+
+.line {
+  margin: 0 14px;
+  color: #ccc;
+}
+
+.nav-right {
+  margin-top: 9px;
+
+  i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+    background-position: 0 -240px;
+  }
+}
+
+.j-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.n-minelst-2 {
+  margin-top: 40px;
+}
+
+.ico-src {
+  float: right;
+  width: 14px;
+  height: 16px;
+  margin-left: 0;
+  background-position: -80px 0px;
+  overflow: hidden;
+  margin: 7px 0 0 10px;
+  text-indent: -9999px;
+
+  &:hover {
+    background-position: -80px -20px;
+  }
+}
