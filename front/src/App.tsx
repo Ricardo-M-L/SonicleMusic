@@ -9,7 +9,7 @@ import Player from './components/Player';
 import Back from './components/Back'
 
 // 路由配置
-import { NAVPATH, ROOT_NAVPATH, NOT_FOUND, SEATCH, MV, VIDEO, ALBUM, SONG, ARTIST, PLAY_LIST } from 'pages/path'
+import { NAVPATH, ROOT_NAVPATH, NOT_FOUND, SEARCH, MV, VIDEO, ALBUM, SONG, ARTIST, PLAY_LIST } from 'pages/path'
 const Discover = lazy(() => import('pages/Discover'))
 const DiscoverArtist = lazy(() => import('pages/DiscoverArtist'))
 const DiscoverPlaylist = lazy(() => import('pages/DiscoverPlaylist'))
@@ -38,7 +38,7 @@ function App() {
           <Route path={ROOT_NAVPATH.PLAYLIST} component={DiscoverPlaylist} />
           <Route path={ROOT_NAVPATH.ALBUM} component={DiscoverAlbum} />
           <Route path={ROOT_NAVPATH.TOPLIST} component={DiscoverToplist} />
-          <Route path={SEATCH} component={Search} />
+          <Route path={SEARCH} component={Search} />
           <Route path={MV} component={Mv} />
           <Route path={VIDEO} component={Video} />
           <Route path={ALBUM} component={Album} />

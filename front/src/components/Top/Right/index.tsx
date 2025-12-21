@@ -6,7 +6,7 @@ import { withRouter, RouteComponentProps } from 'react-router-dom'
 import User from './User'
 import SearchSuggest from 'common/SearchSuggest'
 import { cancelSearch } from 'network/search'
-import { SEATCH } from '@/pages/path'
+import { SEARCH } from '@/pages/path'
 import { escapeSymbol } from 'utils'
 
 interface IProps extends RouteComponentProps { }
@@ -37,7 +37,7 @@ function Right(props: IProps) {
     if ((e.key === "Enter") && searchValue !== '') {
       cancelSearch.cancelSearchSuggest && cancelSearch.cancelSearchSuggest();
 
-      history.push(SEATCH + `?s=${escapeSymbol(searchValue)}&type=1`);
+      history.push(SEARCH + `?s=${escapeSymbol(searchValue)}&type=1`);
 
       (e.target as HTMLInputElement).blur()
     }

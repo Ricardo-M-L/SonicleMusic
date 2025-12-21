@@ -13,7 +13,7 @@ function MvAbout() {
       {/* 下载 */}
       <div className='m-multi'>
         <h3 className='u-hd3'>
-          <span>网易云音乐多端下载</span>
+          <span>律动音乐多端下载</span>
         </h3>
         <div className='bg sprite'>
           {
@@ -33,7 +33,7 @@ function MvAbout() {
 
       <div className='m-pubcode'>
         <h3 className="u-hd3">
-          <span>网易云音乐公众号</span>
+          <span>律动音乐公众号</span>
         </h3>
         <div className='flex'>
           <span className='code sprite'></span>

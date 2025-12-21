@@ -33,7 +33,7 @@ const Slide = forwardRef<ISlideRef, IProps>((props, ref) => {
 
         try {
           change(isNext)
-        } catch (e) { console.log(e) }
+        } catch (e) { console.error('轮播切换失败:', e) }
 
         window.setTimeout(() => {
           flagRef.current = true

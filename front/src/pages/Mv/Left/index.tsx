@@ -36,7 +36,7 @@ function Left(props: IProps) {
         setCommentHot(res.data)
         getComment()
       } catch (e) {
-
+        console.error('获取热门评论失败:', e)
       }
     }
 
@@ -46,7 +46,7 @@ function Left(props: IProps) {
       try {
         setComment(res.data)
       } catch (e) {
-
+        console.error('获取评论失败:', e)
       }
     }
 
@@ -80,7 +80,7 @@ function Left(props: IProps) {
       try {
         setComment(res.data)
       } catch (e) {
-
+        console.error('获取评论失败:', e)
       }
     })
 

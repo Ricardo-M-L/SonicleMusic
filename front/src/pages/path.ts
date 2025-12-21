@@ -61,7 +61,7 @@ const VIDEO = '/video'
 const DJRADIO = '/djradio'
 
 // 搜索
-const SEATCH = '/search'
+const SEARCH = '/search'
 
 // 404
 const NOT_FOUND = '/not_found'
@@ -87,7 +87,7 @@ export {
   MV,
   VIDEO,
   DJRADIO,
-  SEATCH,
+  SEARCH,
   NOT_FOUND,
   ARTISTS
 }

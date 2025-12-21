@@ -4,7 +4,7 @@
 import React, { useMemo, useCallback } from 'react'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import qs from 'qs'
-import { SEATCH } from 'pages/path'
+import { SEARCH } from 'pages/path'
 import { list } from './constant'
 
 interface IProps extends RouteComponentProps { }
@@ -17,7 +17,7 @@ function Navbar(props: IProps) {
   const changeType = useCallback((type: string) => {
     const { s, type: t } = parse
     if (type !== t) {
-      history.push(SEATCH + `?s=${s}&type=${type}`)
+      history.push(SEARCH + `?s=${s}&type=${type}`)
     }
   }, [parse, history])
 

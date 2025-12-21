@@ -53,7 +53,7 @@ function Phone() {
         wLocalStorage.setItem(COUNTRIES_CODE_LIST, JSON.stringify(res))
         setCodeList(res)
       } catch (e) {
-        console.log(e)
+        console.error('获取国家区号列表失败:', e)
       }
     }
     return () => {
@@ -108,7 +108,6 @@ function Phone() {
           setErrMsg('验证码错误')
         } else {
           const res: any = await cellphone(false, phone, verify, c)
-          console.log(res)
           if (res.code === 200) {
             window.location.reload()
             window.scrollTo(0, 0)
@@ -136,7 +135,6 @@ function Phone() {
         } catch {
           setLoginText('登 录')
         }
-        console.log(res)
       }
     }
   }
@@ -145,7 +143,6 @@ function Phone() {
     const { phone } = user
     if (phone && phoneExp.test(phone)) {
       const res: any = await captchaSent(user.phone, code.substring(1))
-      console.log(res)
       if (!res) {
         setErrMsg('发送验证码间隔过短或网络错误')
         return

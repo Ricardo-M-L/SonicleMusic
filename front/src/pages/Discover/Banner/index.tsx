@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import _getBanner, { cancelgetBanner } from 'network/discover/banner'
 import { NAVPATH } from 'pages/path'
 import { preload } from 'utils'
-import fiflterType from './fiflterType'
+import filterType from './filterType'
 
 type bannerInfo = {
   imgUrl: string,
@@ -116,7 +116,7 @@ function Banner() {
           <div className='banner-content'>
             {
               !banners[idx]?.url ? (
-                <Link to={fiflterType(banners[idx]?.targetType) + '/?id=' + banners[idx]?.targetId}>
+                <Link to={filterType(banners[idx]?.targetType) + '/?id=' + banners[idx]?.targetId}>
                   <img ref={imgRef} src={banners[idx]?.imgUrl} alt={banners[idx]?.targetId.toString()} width={730} height={285} />
                 </Link>
               ) : (

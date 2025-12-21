@@ -126,7 +126,7 @@ function QRLogin(props: IProps) {
             </div>
           </div>
           <p className="txt">
-            使用&nbsp;<a className="download-link hover" href="https://music.163.com/#/download" target="_blank" rel="noreferrer">网易云音乐APP</a>&nbsp;扫码登录
+            使用&nbsp;<a className="download-link hover" href="https://music.163.com/#/download" target="_blank" rel="noreferrer">律动音乐APP</a>&nbsp;扫码登录
           </p>
         </div>
       </div>

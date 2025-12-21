@@ -45,7 +45,7 @@ function Left(props: IProps) {
 
   return (
     <div className='top-left'>
-      <h1 className="logo top pointer"><Link to={NAVPATH.ROOT}>网易云音乐</Link></h1>
+      <h1 className="logo top pointer"><Link to={NAVPATH.ROOT}>律动音乐</Link></h1>
       <ul className='top-nav'>
         {Nav}
       </ul>

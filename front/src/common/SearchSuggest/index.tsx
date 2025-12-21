@@ -3,7 +3,7 @@
  */
 import React, { useState, useEffect } from 'react'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
-import { SEATCH } from 'pages/path'
+import { SEARCH } from 'pages/path'
 import { searchSuggest, cancelSearch } from 'network/search'
 import styles from './styles/index.module.less'
 
@@ -42,6 +42,7 @@ function SearchSuggest(props: IProps) {
             setData(res.result)
           }
         } catch (e) {
+          console.error('搜索建议获取失败:', e)
           setData(null)
         }
       })
@@ -55,7 +56,7 @@ function SearchSuggest(props: IProps) {
   return data ? (
     <div className={`${styles['search-suggest']} u-lstlay`} >
       <p className='note s-fc3'>
-        <span className='search-user s-fc3 pointer' onMouseDown={() => history.push(SEATCH + `?s=${value}&type=1002`)}>搜“{value}” 相关用户</span>
+        <span className='search-user s-fc3 pointer' onMouseDown={() => history.push(SEARCH + `?s=${value}&type=1002`)}>搜"{value}" 相关用户</span>
         &nbsp;&gt;
       </p>
       {

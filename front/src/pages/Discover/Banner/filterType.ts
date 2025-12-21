@@ -10,7 +10,7 @@ import {
   NOT_FOUND
 } from 'pages/path'
 
-function fiflterType(type: number): string {
+function filterType(type: number): string {
   switch (type) {
     case 1:
       return SONG
@@ -27,4 +27,4 @@ function fiflterType(type: number): string {
   }
 }
 
-export default fiflterType
+export default filterType

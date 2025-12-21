@@ -9,7 +9,7 @@ import Input from './Input'
 import Navbar from './Navbar'
 import route from './Pages/route'
 import Page from 'common/Page'
-import { SEATCH } from 'pages/path'
+import { SEARCH } from 'pages/path'
 import styles from './styles/index.module.less'
 
 interface IProps extends RouteComponentProps {
@@ -109,7 +109,7 @@ function Search(props: IProps) {
 
   const emitClick = useCallback((page: number | string) => {
     const { s, type } = parse
-    history.push(SEATCH + `?s=${s}&type=${type}&offset=${page}`)
+    history.push(SEARCH + `?s=${s}&type=${type}&offset=${page}`)
   }, [parse, history])
 
   return (

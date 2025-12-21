@@ -52,7 +52,7 @@ function MyInfo() {
     if (!profile?.profile) {
       return (
         <div className='info1 v-hd2 s-bg-1'>
-          <p className="note">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+          <p className="note">登录律动音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
           <i className='pointer btn v-hd2 s-bg-2' onClick={showLogin}>用户登录</i>
         </div>
       )
